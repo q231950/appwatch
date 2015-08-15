@@ -8,22 +8,7 @@
 
 import Foundation
 
-class TimeBox : NSObject {
+class TimeBox {
     var startDate = NSDate()
-    var endDate: NSDate = NSDate() {
-        didSet  {
-            duration += endDate.timeIntervalSinceDate(startDate)
-        }
-    }
-    
-    private var duration:NSTimeInterval = 0
-    
-    override init() {
-        super.init()
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("showDuration"), userInfo: nil, repeats: true)
-    }
-    
-    func showDuration() {
-        print("seconds since launch:\(duration)")
-    }
+    var endDate: NSDate = NSDate()
 }

@@ -12,7 +12,7 @@ class ApplicationObserver : NSObject {
     
     var applicationBundleIdentifier: String
     let timeBox = TimeBox()
-    let timeWriter = TimeWriter()
+    let timeWriter = RemoteTimeWriter()
     
     init(applicationBundleIdentifier: String) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
