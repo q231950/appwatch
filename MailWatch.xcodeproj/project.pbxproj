@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D191B7F62BF0093637A /* AppDelegate.swift */; };
+		3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */; };
+		3BBA1D1F1B7F62BF0093637A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1D1B7F62BF0093637A /* MainMenu.xib */; };
+		3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BBA1D0E1B7F62BF0093637A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBA1D151B7F62BF0093637A;
+			remoteInfo = MailWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BBA1D161B7F62BF0093637A /* MailWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBA1D191B7F62BF0093637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BBA1D1E1B7F62BF0093637A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3BBA1D201B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBA1D251B7F62BF0093637A /* MailWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailWatchTests.swift; sourceTree = "<group>"; };
+		3BBA1D2B1B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BBA1D131B7F62BF0093637A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBA1D221B7F62BF0093637A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BBA1D0D1B7F62BF0093637A = {
+			isa = PBXGroup;
+			children = (
+				3BBA1D181B7F62BF0093637A /* MailWatch */,
+				3BBA1D281B7F62BF0093637A /* MailWatchTests */,
+				3BBA1D171B7F62BF0093637A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BBA1D171B7F62BF0093637A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BBA1D161B7F62BF0093637A /* MailWatch.app */,
+				3BBA1D251B7F62BF0093637A /* MailWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BBA1D181B7F62BF0093637A /* MailWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3BBA1D191B7F62BF0093637A /* AppDelegate.swift */,
+				3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */,
+				3BBA1D1D1B7F62BF0093637A /* MainMenu.xib */,
+				3BBA1D201B7F62BF0093637A /* Info.plist */,
+			);
+			path = MailWatch;
+			sourceTree = "<group>";
+		};
+		3BBA1D281B7F62BF0093637A /* MailWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */,
+				3BBA1D2B1B7F62BF0093637A /* Info.plist */,
+			);
+			path = MailWatchTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BBA1D151B7F62BF0093637A /* MailWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBA1D2E1B7F62BF0093637A /* Build configuration list for PBXNativeTarget "MailWatch" */;
+			buildPhases = (
+				3BBA1D121B7F62BF0093637A /* Sources */,
+				3BBA1D131B7F62BF0093637A /* Frameworks */,
+				3BBA1D141B7F62BF0093637A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailWatch;
+			productName = MailWatch;
+			productReference = 3BBA1D161B7F62BF0093637A /* MailWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BBA1D241B7F62BF0093637A /* MailWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBA1D311B7F62BF0093637A /* Build configuration list for PBXNativeTarget "MailWatchTests" */;
+			buildPhases = (
+				3BBA1D211B7F62BF0093637A /* Sources */,
+				3BBA1D221B7F62BF0093637A /* Frameworks */,
+				3BBA1D231B7F62BF0093637A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BBA1D271B7F62BF0093637A /* PBXTargetDependency */,
+			);
+			name = MailWatchTests;
+			productName = MailWatchTests;
+			productReference = 3BBA1D251B7F62BF0093637A /* MailWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BBA1D0E1B7F62BF0093637A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Martin Kim Dung-Pham";
+				TargetAttributes = {
+					3BBA1D151B7F62BF0093637A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3BBA1D241B7F62BF0093637A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BBA1D151B7F62BF0093637A;
+					};
+				};
+			};
+			buildConfigurationList = 3BBA1D111B7F62BF0093637A /* Build configuration list for PBXProject "MailWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BBA1D0D1B7F62BF0093637A;
+			productRefGroup = 3BBA1D171B7F62BF0093637A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BBA1D151B7F62BF0093637A /* MailWatch */,
+				3BBA1D241B7F62BF0093637A /* MailWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BBA1D141B7F62BF0093637A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */,
+				3BBA1D1F1B7F62BF0093637A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBA1D231B7F62BF0093637A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BBA1D121B7F62BF0093637A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBA1D211B7F62BF0093637A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BBA1D271B7F62BF0093637A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BBA1D151B7F62BF0093637A /* MailWatch */;
+			targetProxy = 3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BBA1D1D1B7F62BF0093637A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BBA1D1E1B7F62BF0093637A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BBA1D2C1B7F62BF0093637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BBA1D2D1B7F62BF0093637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3BBA1D2F1B7F62BF0093637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3BBA1D301B7F62BF0093637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3BBA1D321B7F62BF0093637A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailWatch.app/Contents/MacOS/MailWatch";
+			};
+			name = Debug;
+		};
+		3BBA1D331B7F62BF0093637A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MailWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailWatch.app/Contents/MacOS/MailWatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BBA1D111B7F62BF0093637A /* Build configuration list for PBXProject "MailWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBA1D2C1B7F62BF0093637A /* Debug */,
+				3BBA1D2D1B7F62BF0093637A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BBA1D2E1B7F62BF0093637A /* Build configuration list for PBXNativeTarget "MailWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBA1D2F1B7F62BF0093637A /* Debug */,
+				3BBA1D301B7F62BF0093637A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3BBA1D311B7F62BF0093637A /* Build configuration list for PBXNativeTarget "MailWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBA1D321B7F62BF0093637A /* Debug */,
+				3BBA1D331B7F62BF0093637A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BBA1D0E1B7F62BF0093637A /* Project object */;
+}
