@@ -1,5 +1,5 @@
 //
-//  TimeWriter.swift
+//  FileTimeWriter.swift
 //  MailWatch
 //
 //  Created by Martin Kim Dung-Pham on 15.08.15.
@@ -11,7 +11,7 @@ import Foundation
 let FileName = ".mailwatch.db"
 
 class FileTimeWriter : TimeWriter {
-    func writeTime(startDate: NSDate, endDate: NSDate) {
+    func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
 
         let fileManager = NSFileManager.defaultManager()
         
@@ -24,7 +24,7 @@ class FileTimeWriter : TimeWriter {
         
         do {
             let fileString = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
-            let updatedTimeRecord = fileString.stringByAppendingString("\t\(startDate)\t\(endDate)\n")
+            let updatedTimeRecord = fileString.stringByAppendingString("\t\(startDate)\t\(endDate)\t|\t\(applicationBundleIdentifier)\n")
             try updatedTimeRecord.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
         } catch _ {
             print("Unable to write time to file.")

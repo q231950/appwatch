@@ -9,5 +9,5 @@
 import Foundation
 
 protocol TimeWriter {
-    func writeTime(startDate: NSDate, endDate: NSDate)
+    func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String)
 }

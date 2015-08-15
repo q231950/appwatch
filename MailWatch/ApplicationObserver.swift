@@ -12,7 +12,8 @@ class ApplicationObserver : NSObject {
     
     var applicationBundleIdentifier: String
     let timeBox = TimeBox()
-    let timeWriter = RemoteTimeWriter()
+//    let timeWriter = RemoteTimeWriter()
+    let timeWriter = FileTimeWriter()
     
     init(applicationBundleIdentifier: String) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
@@ -48,7 +49,6 @@ class ApplicationObserver : NSObject {
     
     private func observedApplicationDidTerminate() {
         timeBox.endDate = NSDate()
-        timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate)
-        
+        timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate, applicationBundleIdentifier: applicationBundleIdentifier)
     }
 }

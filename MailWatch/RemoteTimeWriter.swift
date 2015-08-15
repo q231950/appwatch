@@ -9,11 +9,12 @@
 import CloudKit
 
 class RemoteTimeWriter : TimeWriter {
-    func writeTime(startDate: NSDate, endDate: NSDate) {
+    func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
         let timeRecord = CKRecord(recordType: "Time")
         
         timeRecord["startDate"] = startDate
         timeRecord["endDate"] = endDate
+        timeRecord["appBundleID"] = applicationBundleIdentifier
         
         let privateDatabase = CKContainer.defaultContainer().privateCloudDatabase
         privateDatabase.saveRecord(timeRecord, completionHandler: { (record:CKRecord?, error:NSError?) -> Void in
