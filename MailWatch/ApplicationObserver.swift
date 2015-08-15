@@ -11,6 +11,8 @@ import Cocoa
 class ApplicationObserver : NSObject {
     
     var applicationBundleIdentifier: String
+    let timeBox = TimeBox()
+    let timeWriter = TimeWriter()
     
     init(applicationBundleIdentifier: String) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
@@ -26,13 +28,27 @@ class ApplicationObserver : NSObject {
     
     func launchedApplication(sender: AnyObject) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
-            print("launched \(bundleIdentifier)")
+            if (bundleIdentifier as! String == applicationBundleIdentifier) {
+                observedApplicationDidLaunch()
+            }
         }
     }
     
     func terminatedApplication(sender: AnyObject) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
-            print("terminated \(bundleIdentifier)")
+            if (bundleIdentifier as! String == applicationBundleIdentifier) {
+                observedApplicationDidTerminate()
+            }
         }
+    }
+    
+    private func observedApplicationDidLaunch() {
+        timeBox.startDate = NSDate()
+    }
+    
+    private func observedApplicationDidTerminate() {
+        timeBox.endDate = NSDate()
+        timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate)
+        
     }
 }
