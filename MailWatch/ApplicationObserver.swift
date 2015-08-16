@@ -27,7 +27,7 @@ class ApplicationObserver : NSObject {
         NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: Selector("terminatedApplication:"), name: NSWorkspaceDidTerminateApplicationNotification, object: nil)
     }
     
-    func launchedApplication(sender: AnyObject) {
+    func launchedApplication(sender: NSNotification) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
             if (bundleIdentifier as! String == applicationBundleIdentifier) {
                 observedApplicationDidLaunch()
@@ -35,7 +35,7 @@ class ApplicationObserver : NSObject {
         }
     }
     
-    func terminatedApplication(sender: AnyObject) {
+    func terminatedApplication(sender: NSNotification) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
             if (bundleIdentifier as! String == applicationBundleIdentifier) {
                 observedApplicationDidTerminate()
