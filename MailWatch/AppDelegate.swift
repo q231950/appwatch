@@ -14,7 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
-    let applicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit") // com.apple.mail
+    let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit")
+    let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail")
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
