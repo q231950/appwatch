@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BF2D7601B826CAD00D4220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D75F1B826CAD00D4220A /* AppDelegate.swift */; };
+		3BF2D7631B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D7611B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld */; };
+		3BF2D7651B826CAD00D4220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7641B826CAD00D4220A /* Assets.xcassets */; };
+		3BF2D7681B826CAD00D4220A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7661B826CAD00D4220A /* MainMenu.xib */; };
+		3BF2D7731B826CAD00D4220A /* AppWatchLoginItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D7721B826CAD00D4220A /* AppWatchLoginItemTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BF2D76F1B826CAD00D4220A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF2D7541B826CAD00D4220A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF2D75B1B826CAD00D4220A;
+			remoteInfo = AppWatchLoginItem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BF2D75C1B826CAD00D4220A /* AppWatchLoginItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWatchLoginItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF2D75F1B826CAD00D4220A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3BF2D7621B826CAD00D4220A /* AppWatchLoginItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppWatchLoginItem.xcdatamodel; sourceTree = "<group>"; };
+		3BF2D7641B826CAD00D4220A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BF2D7671B826CAD00D4220A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3BF2D7691B826CAD00D4220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF2D76E1B826CAD00D4220A /* AppWatchLoginItemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchLoginItemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BF2D7721B826CAD00D4220A /* AppWatchLoginItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWatchLoginItemTests.swift; sourceTree = "<group>"; };
+		3BF2D7741B826CAD00D4220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BF2D7591B826CAD00D4220A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF2D76B1B826CAD00D4220A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BF2D7531B826CAD00D4220A = {
+			isa = PBXGroup;
+			children = (
+				3BF2D75E1B826CAD00D4220A /* AppWatchLoginItem */,
+				3BF2D7711B826CAD00D4220A /* AppWatchLoginItemTests */,
+				3BF2D75D1B826CAD00D4220A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BF2D75D1B826CAD00D4220A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2D75C1B826CAD00D4220A /* AppWatchLoginItem.app */,
+				3BF2D76E1B826CAD00D4220A /* AppWatchLoginItemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BF2D75E1B826CAD00D4220A /* AppWatchLoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2D75F1B826CAD00D4220A /* AppDelegate.swift */,
+				3BF2D7641B826CAD00D4220A /* Assets.xcassets */,
+				3BF2D7661B826CAD00D4220A /* MainMenu.xib */,
+				3BF2D7691B826CAD00D4220A /* Info.plist */,
+				3BF2D7611B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld */,
+			);
+			path = AppWatchLoginItem;
+			sourceTree = "<group>";
+		};
+		3BF2D7711B826CAD00D4220A /* AppWatchLoginItemTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BF2D7721B826CAD00D4220A /* AppWatchLoginItemTests.swift */,
+				3BF2D7741B826CAD00D4220A /* Info.plist */,
+			);
+			path = AppWatchLoginItemTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BF2D75B1B826CAD00D4220A /* AppWatchLoginItem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF2D7771B826CAD00D4220A /* Build configuration list for PBXNativeTarget "AppWatchLoginItem" */;
+			buildPhases = (
+				3BF2D7581B826CAD00D4220A /* Sources */,
+				3BF2D7591B826CAD00D4220A /* Frameworks */,
+				3BF2D75A1B826CAD00D4220A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppWatchLoginItem;
+			productName = AppWatchLoginItem;
+			productReference = 3BF2D75C1B826CAD00D4220A /* AppWatchLoginItem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3BF2D76D1B826CAD00D4220A /* AppWatchLoginItemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BF2D77A1B826CAD00D4220A /* Build configuration list for PBXNativeTarget "AppWatchLoginItemTests" */;
+			buildPhases = (
+				3BF2D76A1B826CAD00D4220A /* Sources */,
+				3BF2D76B1B826CAD00D4220A /* Frameworks */,
+				3BF2D76C1B826CAD00D4220A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BF2D7701B826CAD00D4220A /* PBXTargetDependency */,
+			);
+			name = AppWatchLoginItemTests;
+			productName = AppWatchLoginItemTests;
+			productReference = 3BF2D76E1B826CAD00D4220A /* AppWatchLoginItemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BF2D7541B826CAD00D4220A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Martin Kim Dung-Pham";
+				TargetAttributes = {
+					3BF2D75B1B826CAD00D4220A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					3BF2D76D1B826CAD00D4220A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BF2D75B1B826CAD00D4220A;
+					};
+				};
+			};
+			buildConfigurationList = 3BF2D7571B826CAD00D4220A /* Build configuration list for PBXProject "AppWatchLoginItem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BF2D7531B826CAD00D4220A;
+			productRefGroup = 3BF2D75D1B826CAD00D4220A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BF2D75B1B826CAD00D4220A /* AppWatchLoginItem */,
+				3BF2D76D1B826CAD00D4220A /* AppWatchLoginItemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BF2D75A1B826CAD00D4220A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF2D7651B826CAD00D4220A /* Assets.xcassets in Resources */,
+				3BF2D7681B826CAD00D4220A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF2D76C1B826CAD00D4220A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF2D7581B826CAD00D4220A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF2D7631B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld in Sources */,
+				3BF2D7601B826CAD00D4220A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF2D76A1B826CAD00D4220A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BF2D7731B826CAD00D4220A /* AppWatchLoginItemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BF2D7701B826CAD00D4220A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BF2D75B1B826CAD00D4220A /* AppWatchLoginItem */;
+			targetProxy = 3BF2D76F1B826CAD00D4220A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3BF2D7661B826CAD00D4220A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BF2D7671B826CAD00D4220A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BF2D7751B826CAD00D4220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3BF2D7761B826CAD00D4220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3BF2D7781B826CAD00D4220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Martin Kim Dung-Pham (T66335VK2X)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchLoginItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch.AppWatchLoginItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3BF2D7791B826CAD00D4220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer: Martin Kim Dung-Pham (T66335VK2X)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchLoginItem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch.AppWatchLoginItem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3BF2D77B1B826CAD00D4220A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchLoginItemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchLoginItemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppWatchLoginItem.app/Contents/MacOS/AppWatchLoginItem";
+			};
+			name = Debug;
+		};
+		3BF2D77C1B826CAD00D4220A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchLoginItemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchLoginItemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppWatchLoginItem.app/Contents/MacOS/AppWatchLoginItem";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BF2D7571B826CAD00D4220A /* Build configuration list for PBXProject "AppWatchLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF2D7751B826CAD00D4220A /* Debug */,
+				3BF2D7761B826CAD00D4220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF2D7771B826CAD00D4220A /* Build configuration list for PBXNativeTarget "AppWatchLoginItem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF2D7781B826CAD00D4220A /* Debug */,
+				3BF2D7791B826CAD00D4220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BF2D77A1B826CAD00D4220A /* Build configuration list for PBXNativeTarget "AppWatchLoginItemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF2D77B1B826CAD00D4220A /* Debug */,
+				3BF2D77C1B826CAD00D4220A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3BF2D7611B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3BF2D7621B826CAD00D4220A /* AppWatchLoginItem.xcdatamodel */,
+			);
+			currentVersion = 3BF2D7621B826CAD00D4220A /* AppWatchLoginItem.xcdatamodel */;
+			path = AppWatchLoginItem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3BF2D7541B826CAD00D4220A /* Project object */;
+}

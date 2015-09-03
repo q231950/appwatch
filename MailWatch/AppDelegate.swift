@@ -10,10 +10,8 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    @IBOutlet weak var window: NSWindow!
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit")
     let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail")
 
@@ -21,6 +19,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         setupStatusBarIcon()
         setupStatusMenu()
+    
+//
+//        
+//        
+//        // Print all log entries
+//        let dateFormatter = NSDateFormatter()
+//        dateFormatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
+//        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss.SSS"
+//        SystemLog.readAllLogEntries { entry in
+//            let timestamp = dateFormatter.stringFromDate(entry.date)
+//            print("\(timestamp) [\(entry.PID)] \(entry.levelDescription): \(entry.message)")
+//        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -37,7 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let menu = NSMenu()
         menu.addItem(NSMenuItem(title: "Running?", action: Selector("printQuote:"), keyEquivalent: "P"))
         menu.addItem(NSMenuItem.separatorItem())
-        menu.addItem(NSMenuItem(title: "Quit Quotes", action: Selector("terminate:"), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
         
         statusItem.menu = menu
     }
