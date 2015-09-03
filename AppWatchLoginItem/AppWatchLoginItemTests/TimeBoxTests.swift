@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import MailWatch
+@testable import AppWatchLoginItem
 
 class TimeBoxTests: XCTestCase {
     

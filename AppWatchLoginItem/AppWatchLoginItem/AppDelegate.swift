@@ -12,20 +12,40 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
+    let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit")
+    let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail")
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
-        let s:NSString = "hulu"
-        let url = applicationDocumentsDirectory.URLByAppendingPathComponent("hulu.txt")
-        do {
-            try s.writeToURL(url, atomically: true, encoding: NSUTF8StringEncoding)
-        } catch _ {
-        }
+        setupStatusBarIcon()
+        setupStatusMenu()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
+    }
+    
+    private func setupStatusBarIcon() {
+        if let button = statusItem.button {
+            button.image = NSImage(named: "StatusBarIcon")
+        }
+    }
+    
+    private func setupStatusMenu() {
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "Running?", action: Selector("printQuote:"), keyEquivalent: "R"))
+        menu.addItem(NSMenuItem.separatorItem())
+        menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
+        
+        statusItem.menu = menu
+    }
+    
+    func printQuote(sender: AnyObject) {
+        let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
+        let quoteAuthor = "Mark Twain"
+        
+        print("\(quoteText) — \(quoteAuthor)")
     }
 
     // MARK: - Core Data stack

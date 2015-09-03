@@ -10,19 +10,8 @@
 		3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D191B7F62BF0093637A /* AppDelegate.swift */; };
 		3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */; };
 		3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */; };
-		3BBA1D351B7F68460093637A /* ApplicationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D341B7F68460093637A /* ApplicationObserver.swift */; };
-		3BBA1D371B7F6DC40093637A /* TimeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D361B7F6DC40093637A /* TimeBox.swift */; };
-		3BBA1D391B7F73E20093637A /* FileTimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D381B7F73E20093637A /* FileTimeWriter.swift */; };
-		3BF124801B80A4960006F818 /* TimeBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1247F1B80A4960006F818 /* TimeBoxTests.swift */; };
 		3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */; };
-		3BF1FCDB1B7FE8210034543C /* RemoteTimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCDA1B7FE8210034543C /* RemoteTimeWriter.swift */; };
-		3BF1FCDD1B7FE8410034543C /* TimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCDC1B7FE8410034543C /* TimeWriter.swift */; };
 		3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */; };
-		3BF1FCE41B7FF0000034543C /* TimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCE31B7FF0000034543C /* TimeWarehouse.swift */; };
-		3BF1FCE61B7FF09E0034543C /* RemoteTimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCE51B7FF09E0034543C /* RemoteTimeWarehouse.swift */; };
-		3BF1FCE81B7FF3BF0034543C /* FileTimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCE71B7FF3BF0034543C /* FileTimeWarehouse.swift */; };
-		3BF1FCEA1B7FF57D0034543C /* FileTimeWarehouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1FCE91B7FF57D0034543C /* FileTimeWarehouseTests.swift */; };
-		3BF1FCEC1B7FF5EA0034543C /* FileTimeWarehouseTestsSampleFile.db in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1FCEB1B7FF5EA0034543C /* FileTimeWarehouseTestsSampleFile.db */; };
 		3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
 		3BF2D7871B826D3D00D4220A /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D78B1B83A4A500D4220A /* SystemLog.swift */; };
@@ -76,20 +65,9 @@
 		3BBA1D251B7F62BF0093637A /* AppWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailWatchTests.swift; sourceTree = "<group>"; };
 		3BBA1D2B1B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BBA1D341B7F68460093637A /* ApplicationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationObserver.swift; sourceTree = "<group>"; };
-		3BBA1D361B7F6DC40093637A /* TimeBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBox.swift; sourceTree = "<group>"; };
-		3BBA1D381B7F73E20093637A /* FileTimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTimeWriter.swift; sourceTree = "<group>"; };
-		3BF1247F1B80A4960006F818 /* TimeBoxTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBoxTests.swift; sourceTree = "<group>"; };
 		3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3BF1FCDA1B7FE8210034543C /* RemoteTimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTimeWriter.swift; sourceTree = "<group>"; };
-		3BF1FCDC1B7FE8410034543C /* TimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeWriter.swift; sourceTree = "<group>"; };
 		3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MailWatch.entitlements; sourceTree = "<group>"; };
-		3BF1FCE31B7FF0000034543C /* TimeWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeWarehouse.swift; sourceTree = "<group>"; };
-		3BF1FCE51B7FF09E0034543C /* RemoteTimeWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteTimeWarehouse.swift; sourceTree = "<group>"; };
-		3BF1FCE71B7FF3BF0034543C /* FileTimeWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTimeWarehouse.swift; sourceTree = "<group>"; };
-		3BF1FCE91B7FF57D0034543C /* FileTimeWarehouseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTimeWarehouseTests.swift; sourceTree = "<group>"; };
-		3BF1FCEB1B7FF5EA0034543C /* FileTimeWarehouseTestsSampleFile.db */ = {isa = PBXFileReference; fileEncoding = 7; lastKnownFileType = text; path = FileTimeWarehouseTestsSampleFile.db; sourceTree = "<group>"; };
 		3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		3BF2D74F1B8264CB00D4220A /* MailWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLoginItem.xcodeproj; path = AppWatchLoginItem/AppWatchLoginItem.xcodeproj; sourceTree = "<group>"; };
@@ -144,13 +122,9 @@
 			children = (
 				3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */,
 				3BBA1D191B7F62BF0093637A /* AppDelegate.swift */,
-				3BBA1D341B7F68460093637A /* ApplicationObserver.swift */,
 				3BF7495C1B89DBA4008469E2 /* ViewController.swift */,
-				3BBA1D361B7F6DC40093637A /* TimeBox.swift */,
 				3BF4FBFD1B8CF2D500E75118 /* View Controllers */,
 				3BF2D78A1B83A49200D4220A /* System Log */,
-				3BF1FCE21B7FEFEB0034543C /* TimeWarehouse */,
-				3BF1FCDE1B7FE8510034543C /* TimeWriter */,
 				3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */,
 				3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */,
 				3BBA1D201B7F62BF0093637A /* Info.plist */,
@@ -164,39 +138,8 @@
 			children = (
 				3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */,
 				3BBA1D2B1B7F62BF0093637A /* Info.plist */,
-				3BF1247F1B80A4960006F818 /* TimeBoxTests.swift */,
-				3BF1247E1B80A4670006F818 /* File Time Warehouse */,
 			);
 			path = MailWatchTests;
-			sourceTree = "<group>";
-		};
-		3BF1247E1B80A4670006F818 /* File Time Warehouse */ = {
-			isa = PBXGroup;
-			children = (
-				3BF1FCE91B7FF57D0034543C /* FileTimeWarehouseTests.swift */,
-				3BF1FCEB1B7FF5EA0034543C /* FileTimeWarehouseTestsSampleFile.db */,
-			);
-			name = "File Time Warehouse";
-			sourceTree = "<group>";
-		};
-		3BF1FCDE1B7FE8510034543C /* TimeWriter */ = {
-			isa = PBXGroup;
-			children = (
-				3BF1FCDC1B7FE8410034543C /* TimeWriter.swift */,
-				3BBA1D381B7F73E20093637A /* FileTimeWriter.swift */,
-				3BF1FCDA1B7FE8210034543C /* RemoteTimeWriter.swift */,
-			);
-			name = TimeWriter;
-			sourceTree = "<group>";
-		};
-		3BF1FCE21B7FEFEB0034543C /* TimeWarehouse */ = {
-			isa = PBXGroup;
-			children = (
-				3BF1FCE31B7FF0000034543C /* TimeWarehouse.swift */,
-				3BF1FCE71B7FF3BF0034543C /* FileTimeWarehouse.swift */,
-				3BF1FCE51B7FF09E0034543C /* RemoteTimeWarehouse.swift */,
-			);
-			name = TimeWarehouse;
 			sourceTree = "<group>";
 		};
 		3BF2D77E1B826CAD00D4220A /* Products */ = {
@@ -344,7 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF1FCEC1B7FF5EA0034543C /* FileTimeWarehouseTestsSampleFile.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,18 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBA1D351B7F68460093637A /* ApplicationObserver.swift in Sources */,
 				3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */,
 				3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */,
-				3BF1FCE61B7FF09E0034543C /* RemoteTimeWarehouse.swift in Sources */,
-				3BBA1D371B7F6DC40093637A /* TimeBox.swift in Sources */,
 				3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */,
-				3BF1FCDD1B7FE8410034543C /* TimeWriter.swift in Sources */,
 				3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */,
-				3BF1FCE81B7FF3BF0034543C /* FileTimeWarehouse.swift in Sources */,
-				3BBA1D391B7F73E20093637A /* FileTimeWriter.swift in Sources */,
-				3BF1FCE41B7FF0000034543C /* TimeWarehouse.swift in Sources */,
-				3BF1FCDB1B7FE8210034543C /* RemoteTimeWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF1FCEA1B7FF57D0034543C /* FileTimeWarehouseTests.swift in Sources */,
 				3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */,
-				3BF124801B80A4960006F818 /* TimeBoxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

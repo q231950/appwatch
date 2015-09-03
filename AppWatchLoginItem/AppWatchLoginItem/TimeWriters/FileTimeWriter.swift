@@ -8,7 +8,7 @@
 
 import Foundation
 
-let FileName = ".appwatch.db"
+let FileName = ".mailwatch.db"
 
 class FileTimeWriter : TimeWriter {
     func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
@@ -16,7 +16,7 @@ class FileTimeWriter : TimeWriter {
         let fileManager = NSFileManager.defaultManager()
         
         let documentsPath = NSHomeDirectory()
-        let filePath = documentsPath.stringByAppendingString("/" + FileName)
+        let filePath = documentsPath.stringByAppendingPathComponent(FileName)
         
         if (!fileManager.fileExistsAtPath(filePath)) {
             fileManager.createFileAtPath(filePath, contents: NSData(), attributes: nil)
