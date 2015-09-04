@@ -14,8 +14,8 @@ class TimeTableViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView.content = ["hu", "lu"]
-        collectionView.itemPrototype = storyboard!.instantiateControllerWithIdentifier("collectionViewItem") as? NSCollectionViewItem
+//        collectionView.content = ["hu", "lu"]
+//        collectionView.itemPrototype = storyboard!.instantiateControllerWithIdentifier("collectionViewItem") as? NSCollectionViewItem
     }
 
 //    func numberOfSectionsInCollectionView(collectionView: NSCollectionView) -> Int {

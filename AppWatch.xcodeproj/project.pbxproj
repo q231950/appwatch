@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3032A01B999D7E003CE479 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
 		3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D191B7F62BF0093637A /* AppDelegate.swift */; };
 		3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */; };
-		3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */; };
 		3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */; };
 		3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */; };
 		3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
@@ -63,13 +63,12 @@
 		3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BBA1D201B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBA1D251B7F62BF0093637A /* AppWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailWatchTests.swift; sourceTree = "<group>"; };
 		3BBA1D2B1B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MailWatch.entitlements; sourceTree = "<group>"; };
 		3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		3BF2D74F1B8264CB00D4220A /* MailWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppWatch-Bridging-Header.h"; sourceTree = "<group>"; };
 		3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLoginItem.xcodeproj; path = AppWatchLoginItem/AppWatchLoginItem.xcodeproj; sourceTree = "<group>"; };
 		3BF2D78B1B83A4A500D4220A /* SystemLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemLog.swift; path = SystemLog/SystemLog.swift; sourceTree = "<group>"; };
 		3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3032A01B999D7E003CE479 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +128,7 @@
 				3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */,
 				3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */,
 				3BBA1D201B7F62BF0093637A /* Info.plist */,
-				3BF2D74F1B8264CB00D4220A /* MailWatch-Bridging-Header.h */,
+				3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */,
 			);
 			path = MailWatch;
 			sourceTree = "<group>";
@@ -136,7 +136,6 @@
 		3BBA1D281B7F62BF0093637A /* MailWatchTests */ = {
 			isa = PBXGroup;
 			children = (
-				3BBA1D291B7F62BF0093637A /* MailWatchTests.swift */,
 				3BBA1D2B1B7F62BF0093637A /* Info.plist */,
 			);
 			path = MailWatchTests;
@@ -308,7 +307,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBA1D2A1B7F62BF0093637A /* MailWatchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;
 				PRODUCT_NAME = AppWatch;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/MailWatch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/AppWatch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -436,7 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;
 				PRODUCT_NAME = AppWatch;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/MailWatch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/AppWatch-Bridging-Header.h";
 			};
 			name = Release;
 		};

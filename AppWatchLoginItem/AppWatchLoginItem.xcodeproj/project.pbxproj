@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B30329E1B999D32003CE479 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3BF2D75C1B826CAD00D4220A /* AppWatchLoginItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWatchLoginItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF2D75F1B826CAD00D4220A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF2D7621B826CAD00D4220A /* AppWatchLoginItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppWatchLoginItem.xcdatamodel; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		3BF2D7531B826CAD00D4220A = {
 			isa = PBXGroup;
 			children = (
+				3B30329E1B999D32003CE479 /* SystemConfiguration.framework */,
 				3BF2D75E1B826CAD00D4220A /* AppWatchLoginItem */,
 				3BF2D7711B826CAD00D4220A /* AppWatchLoginItemTests */,
 				3BF2D75D1B826CAD00D4220A /* Products */,
