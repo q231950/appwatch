@@ -10,11 +10,22 @@ import XCTest
 @testable import AppWatchLoginItem
 
 class ApplicationObserverTest: XCTestCase {
-
+    
+    let applicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:FileTimeWriter())
+    let notification = NSNotification(name: "x", object: nil, userInfo: ["NSApplicationBundleIdentifier" : "com.apple.TextEdit"])
+    
+    override func setUp() {
+        super.setUp()
+        applicationObserver.didLaunchApplication(notification)
+    }
+    
     func testObservedApplicationDidLaunch() {
-        let applicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit")
-        applicationObserver.didLaunchApplication(NSNotification(name: "x", object: nil, userInfo: ["NSApplicationBundleIdentifier" : "com.apple.TextEdit"]))
         XCTAssertTrue(applicationObserver.observedApplicationIsRunning)
+    }
+    
+    func testObservedApplicationDidTerminate() {
+        applicationObserver.didTerminateApplication(notification)
+        XCTAssertFalse(applicationObserver.observedApplicationIsRunning)
     }
     
 }
