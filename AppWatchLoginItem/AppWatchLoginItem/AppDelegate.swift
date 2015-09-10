@@ -52,10 +52,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     private func addApplicationObservers() {
-        let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit")
+        let timeWriter = FileTimeWriter() // RemoteTimeWriter()
+        let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:timeWriter)
         applicationObservers.append(textEditApplicationObserver)
         
-        let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail")
+        let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail", timeBox: TimeBox(), timeWriter:timeWriter)
         applicationObservers.append(mailApplicationObserver)
     }
     

@@ -11,13 +11,14 @@ import Cocoa
 class ApplicationObserver : NSObject {
     
     let applicationBundleIdentifier: String
-    let timeBox = TimeBox()
-//    let timeWriter = RemoteTimeWriter()
-    let timeWriter = FileTimeWriter()
+    let timeBox: TimeBox
+    let timeWriter: TimeWriter
     var observedApplicationIsRunning = false
     
-    init(applicationBundleIdentifier: String) {
+    init(applicationBundleIdentifier: String, timeBox: TimeBox, timeWriter: TimeWriter) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
+        self.timeBox = timeBox
+        self.timeWriter = timeWriter
         super.init()
         
         registerCurrentApplicationState()
@@ -73,5 +74,6 @@ class ApplicationObserver : NSObject {
     private func observedApplicationDidTerminate() {
         timeBox.endDate = NSDate()
         timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate, applicationBundleIdentifier: applicationBundleIdentifier)
+        observedApplicationIsRunning = false
     }
 }
