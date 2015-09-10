@@ -24,6 +24,10 @@ class ViewController: NSViewController {
         let enabled: Bool = NSUserDefaults.standardUserDefaults().boolForKey(autoLoginEnabledKey)
         segmentedControl.setSelected(enabled, forSegment: 0)
         segmentedControl.setSelected(!enabled, forSegment: 1)
+        
+//        let identifier: CFStringRef = "com.elbedev.MailWatch.AppWatchLoginItem"
+//        
+//        SMLoginItemSetEnabled(identifier, Bool(false))
     }
     
     @IBOutlet weak var segmentedControl: NSSegmentedControl! {
@@ -47,12 +51,9 @@ class ViewController: NSViewController {
     private func setLoginItemEnabled(enabled: Bool) {
         let identifier: CFStringRef = "com.elbedev.AppWatch.AppWatchLoginItem"
         
-        if SMLoginItemSetEnabled(identifier, Bool(enabled) == true) {
-        print("did set SMLoginItemSetEnabled to \(enabled)")
+        if SMLoginItemSetEnabled(identifier, Bool(enabled)) {
             NSUserDefaults.standardUserDefaults().setBool(enabled, forKey: autoLoginEnabledKey)
             segmentedControl.setSelected(true, forSegment: enabled ? 0 : 1)
-        } else {
-            print("unable to set SMLoginItemSetEnabled to \(enabled)")
         }
     }
     

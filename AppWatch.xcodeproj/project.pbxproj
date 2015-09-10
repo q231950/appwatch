@@ -13,10 +13,10 @@
 		3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */; };
 		3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */; };
 		3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
-		3BF2D7871B826D3D00D4220A /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D78B1B83A4A500D4220A /* SystemLog.swift */; };
 		3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */; };
 		3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7495C1B89DBA4008469E2 /* ViewController.swift */; };
+		3BF7A7CB1BA1F83300069061 /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,13 @@
 			remoteGlobalIDString = 3BF2D76E1B826CAD00D4220A;
 			remoteInfo = AppWatchLoginItemTests;
 		};
+		3BF7A7CC1BA1F86B00069061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF2D75B1B826CAD00D4220A;
+			remoteInfo = AppWatchLoginItem;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +57,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				3BF2D7871B826D3D00D4220A /* AppWatchLoginItem.app in Copy Login Item */,
+				3BF7A7CB1BA1F83300069061 /* AppWatchLoginItem.app in Copy Login Item */,
 			);
 			name = "Copy Login Item";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +188,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3BF7A7CD1BA1F86B00069061 /* PBXTargetDependency */,
 			);
 			name = AppWatch;
 			productName = MailWatch;
@@ -317,6 +325,11 @@
 			isa = PBXTargetDependency;
 			target = 3BBA1D151B7F62BF0093637A /* AppWatch */;
 			targetProxy = 3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */;
+		};
+		3BF7A7CD1BA1F86B00069061 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppWatchLoginItem;
+			targetProxy = 3BF7A7CC1BA1F86B00069061 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

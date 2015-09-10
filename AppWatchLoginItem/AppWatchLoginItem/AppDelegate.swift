@@ -18,6 +18,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        
+        let s:NSString = "version"
+        let url = applicationDocumentsDirectory.URLByAppendingPathComponent("hulu.txt")
+        do {
+            try s.writeToURL(url, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch _ {
+        }
+        
         setupStatusBarIcon()
         setupStatusMenu()
     }
