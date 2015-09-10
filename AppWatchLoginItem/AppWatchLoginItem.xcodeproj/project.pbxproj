@@ -11,6 +11,7 @@
 		3BF2D7631B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D7611B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld */; };
 		3BF2D7651B826CAD00D4220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7641B826CAD00D4220A /* Assets.xcassets */; };
 		3BF2D7681B826CAD00D4220A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7661B826CAD00D4220A /* MainMenu.xib */; };
+		3BF435041BA203A300B3F0A7 /* ApplicationObserverTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF435031BA203A300B3F0A7 /* ApplicationObserverTest.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF455AE1B98CDC5007B792B /* ApplicationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF455AD1B98CDC5007B792B /* ApplicationObserver.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF455B21B98CDE7007B792B /* TimeBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF455B11B98CDE7007B792B /* TimeBox.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF455C41B98CF6D007B792B /* FileTimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF455C11B98CF6D007B792B /* FileTimeWarehouse.swift */; settings = {ASSET_TAGS = (); }; };
@@ -44,6 +45,7 @@
 		3BF2D7691B826CAD00D4220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF2D76E1B826CAD00D4220A /* AppWatchLoginItemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchLoginItemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF2D7741B826CAD00D4220A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF435031BA203A300B3F0A7 /* ApplicationObserverTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationObserverTest.swift; sourceTree = "<group>"; };
 		3BF455AD1B98CDC5007B792B /* ApplicationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationObserver.swift; sourceTree = "<group>"; };
 		3BF455B11B98CDE7007B792B /* TimeBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeBox.swift; sourceTree = "<group>"; };
 		3BF455C11B98CF6D007B792B /* FileTimeWarehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTimeWarehouse.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF455CD1B98D1C1007B792B /* TimeBoxTests.swift */,
+				3BF435031BA203A300B3F0A7 /* ApplicationObserverTest.swift */,
 				3BF455D51B98D284007B792B /* File Time Warehouse Tests */,
 				3BF2D7741B826CAD00D4220A /* Info.plist */,
 			);
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF455D31B98D26E007B792B /* FileTimeWarehouseTests.swift in Sources */,
+				3BF435041BA203A300B3F0A7 /* ApplicationObserverTest.swift in Sources */,
 				3BF455CE1B98D1C1007B792B /* TimeBoxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
