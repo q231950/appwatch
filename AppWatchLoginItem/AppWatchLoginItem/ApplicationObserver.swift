@@ -10,24 +10,29 @@ import Cocoa
 
 class ApplicationObserver : NSObject {
     
-    var applicationBundleIdentifier: String
+    let applicationBundleIdentifier: String
     let timeBox = TimeBox()
 //    let timeWriter = RemoteTimeWriter()
     let timeWriter = FileTimeWriter()
+    var observedApplicationIsRunning = false
     
     init(applicationBundleIdentifier: String) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
         super.init()
         
+        registerCurrentApplicationState()
         setupNotifications()
     }
     
-    private func setupNotifications() {
-        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: Selector("launchedApplication:"), name: NSWorkspaceDidLaunchApplicationNotification, object: nil)
-        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: Selector("terminatedApplication:"), name: NSWorkspaceDidTerminateApplicationNotification, object: nil)
+    // MARK: Public
+    
+    func persistObservations() {
+        if observedApplicationIsRunning {
+            observedApplicationDidTerminate()
+        }
     }
     
-    func launchedApplication(sender: NSNotification) {
+    func didLaunchApplication(sender: NSNotification) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
             if (bundleIdentifier as! String == applicationBundleIdentifier) {
                 observedApplicationDidLaunch()
@@ -35,7 +40,7 @@ class ApplicationObserver : NSObject {
         }
     }
     
-    func terminatedApplication(sender: NSNotification) {
+    func didTerminateApplication(sender: NSNotification) {
         if let bundleIdentifier = sender.userInfo!["NSApplicationBundleIdentifier"] {
             if (bundleIdentifier as! String == applicationBundleIdentifier) {
                 observedApplicationDidTerminate()
@@ -43,8 +48,26 @@ class ApplicationObserver : NSObject {
         }
     }
     
+    // MARK: Private
+    
+    private func registerCurrentApplicationState() {
+        let workspace = NSWorkspace.sharedWorkspace()
+        let applications = workspace.runningApplications
+        for app in applications {
+            if app.bundleIdentifier == self.applicationBundleIdentifier {
+                observedApplicationDidLaunch()
+            }
+        }
+    }
+    
+    private func setupNotifications() {
+        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: Selector("didLaunchApplication:"), name: NSWorkspaceDidLaunchApplicationNotification, object: nil)
+        NSWorkspace.sharedWorkspace().notificationCenter.addObserver(self, selector: Selector("didTerminateApplication:"), name: NSWorkspaceDidTerminateApplicationNotification, object: nil)
+    }
+    
     private func observedApplicationDidLaunch() {
         timeBox.startDate = NSDate()
+        observedApplicationIsRunning = true
     }
     
     private func observedApplicationDidTerminate() {
