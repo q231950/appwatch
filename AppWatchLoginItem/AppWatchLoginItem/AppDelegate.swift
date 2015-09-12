@@ -11,15 +11,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let applicationObserverController = ApplicationObserverController(identifiers: ["com.apple.TextEdit", "com.apple.mail"])
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {        
         setupStatusBarIcon()
         setupStatusMenu()
-        
-        window.makeKeyWindow()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
