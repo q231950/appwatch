@@ -2,12 +2,12 @@
   "images" : [
     {
       "idiom" : "mac",
-      "filename" : "StatusBarIcon.png",
+      "filename" : "appicon_60.png",
       "scale" : "1x"
     },
     {
       "idiom" : "mac",
-      "filename" : "StatusBarIcon@2x.png",
+      "filename" : "appicon_120.png",
       "scale" : "2x"
     }
   ],
