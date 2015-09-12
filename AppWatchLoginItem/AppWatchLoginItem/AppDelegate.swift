@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
-    var applicationObservers: [ApplicationObserver] = [ApplicationObserver]()
+    let applicationObserverController = ApplicationObserverController()
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         
@@ -26,14 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         setupStatusBarIcon()
         setupStatusMenu()
-        addApplicationObservers()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
-        for applicationObserver in applicationObservers {
-            applicationObserver.persistObservations()
-        }
+        applicationObserverController.persistObservations()
     }
     
     private func setupStatusBarIcon() {
@@ -49,15 +45,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
         
         statusItem.menu = menu
-    }
-    
-    private func addApplicationObservers() {
-        let timeWriter = FileTimeWriter() // RemoteTimeWriter()
-        let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:timeWriter)
-        applicationObservers.append(textEditApplicationObserver)
-        
-        let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail", timeBox: TimeBox(), timeWriter:timeWriter)
-        applicationObservers.append(mailApplicationObserver)
     }
     
     func printQuote(sender: AnyObject) {
