@@ -9,10 +9,12 @@
 import Foundation
 
 class ApplicationObserverController {
-    private var applicationObservers: [ApplicationObserver] = [ApplicationObserver]()
+    internal var applicationObservers: [ApplicationObserver] = [ApplicationObserver]()
     
-    init() {
-        addApplicationObservers()
+    init(identifiers: [String]) {
+        for identifier in identifiers {
+            addApplicationObserver(identifier)
+        }
     }
     
     func persistObservations() {
@@ -21,12 +23,9 @@ class ApplicationObserverController {
         }
     }
     
-    private func addApplicationObservers() {
+    private func addApplicationObserver(identifier: String) {
         let timeWriter = FileTimeWriter() // RemoteTimeWriter()
-        let textEditApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:timeWriter)
-        applicationObservers.append(textEditApplicationObserver)
-        
-        let mailApplicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.mail", timeBox: TimeBox(), timeWriter:timeWriter)
-        applicationObservers.append(mailApplicationObserver)
+        let observer = ApplicationObserver(applicationBundleIdentifier: identifier, timeBox: TimeBox(), timeWriter:timeWriter)
+        applicationObservers.append(observer)
     }
 }
