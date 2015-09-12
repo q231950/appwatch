@@ -18,6 +18,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(aNotification: NSNotification) {        
         setupStatusBarIcon()
         setupStatusMenu()
+        
+        window.makeKeyWindow()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -32,20 +34,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     private func setupStatusMenu() {
         let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Running?", action: Selector("printQuote:"), keyEquivalent: "R"))
+        menu.addItem(NSMenuItem(title: "AppWatch App", action: Selector("showParentApp:"), keyEquivalent: "a"))
         menu.addItem(NSMenuItem.separatorItem())
         menu.addItem(NSMenuItem(title: "Quit", action: Selector("terminate:"), keyEquivalent: "q"))
         
         statusItem.menu = menu
     }
     
-    func printQuote(sender: AnyObject) {
-        let quoteText = "Never put off until tomorrow what you can do the day after tomorrow."
-        let quoteAuthor = "Mark Twain"
-        
-        print("\(quoteText) — \(quoteAuthor)")
+    func showParentApp(sender: AnyObject) {
+        NSWorkspace.sharedWorkspace().launchApplication("AppWatch")
     }
-
+    
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
