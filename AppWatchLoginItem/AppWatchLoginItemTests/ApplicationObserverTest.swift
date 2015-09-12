@@ -11,7 +11,7 @@ import XCTest
 
 class ApplicationObserverTest: XCTestCase {
     
-    let applicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:FileTimeWriter())
+    let applicationObserver = ApplicationObserver(applicationBundleIdentifier: "com.apple.TextEdit", timeBox: TimeBox(), timeWriter:BlackHoleTimeWriter())
     let notification = NSNotification(name: "x", object: nil, userInfo: ["NSApplicationBundleIdentifier" : "com.apple.TextEdit"])
     
     override func setUp() {

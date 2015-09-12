@@ -24,7 +24,7 @@ class ApplicationObserverController {
     }
     
     private func addApplicationObserver(identifier: String) {
-        let timeWriter = FileTimeWriter() // RemoteTimeWriter()
+        let timeWriter = FileTimeWriter(fileName: ".appwatch.db") // RemoteTimeWriter()
         let observer = ApplicationObserver(applicationBundleIdentifier: identifier, timeBox: TimeBox(), timeWriter:timeWriter)
         applicationObservers.append(observer)
     }

@@ -8,15 +8,20 @@
 
 import Foundation
 
-let FileName = ".appwatch.db"
-
 class FileTimeWriter : TimeWriter {
+    
+    internal let fileName: String
+    
+    init(fileName: String) {
+        self.fileName = fileName
+    }
+    
     func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
 
         let fileManager = NSFileManager.defaultManager()
         
         let documentsPath = NSHomeDirectory()
-        let filePath = documentsPath.stringByAppendingString("/" + FileName)
+        let filePath = documentsPath.stringByAppendingString("/" + fileName)
         
         if (!fileManager.fileExistsAtPath(filePath)) {
             fileManager.createFileAtPath(filePath, contents: NSData(), attributes: nil)

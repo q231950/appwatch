@@ -25,6 +25,8 @@
 		3BF455D41B98D26E007B792B /* FileTimeWarehouseTestsSampleFile.db in Resources */ = {isa = PBXBuildFile; fileRef = 3BF455D21B98D26E007B792B /* FileTimeWarehouseTestsSampleFile.db */; settings = {ASSET_TAGS = (); }; };
 		3BF66A0D1BA4355F00A4A451 /* ApplicationObserverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF66A0C1BA4355F00A4A451 /* ApplicationObserverController.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF66A0F1BA4373300A4A451 /* ApplicationObserverControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF66A0E1BA4373300A4A451 /* ApplicationObserverControllerTest.swift */; settings = {ASSET_TAGS = (); }; };
+		3BF66A151BA4432F00A4A451 /* TimeWriterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF66A141BA4432F00A4A451 /* TimeWriterTest.swift */; settings = {ASSET_TAGS = (); }; };
+		3BF8D0A91BA4801A0074E92B /* BlackHoleTimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF66A121BA4425100A4A451 /* BlackHoleTimeWriter.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		3BF455D21B98D26E007B792B /* FileTimeWarehouseTestsSampleFile.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FileTimeWarehouseTestsSampleFile.db; sourceTree = "<group>"; };
 		3BF66A0C1BA4355F00A4A451 /* ApplicationObserverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationObserverController.swift; sourceTree = "<group>"; };
 		3BF66A0E1BA4373300A4A451 /* ApplicationObserverControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationObserverControllerTest.swift; sourceTree = "<group>"; };
+		3BF66A121BA4425100A4A451 /* BlackHoleTimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BlackHoleTimeWriter.swift; path = ../../MailWatch/BlackHoleTimeWriter.swift; sourceTree = "<group>"; };
+		3BF66A141BA4432F00A4A451 /* TimeWriterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeWriterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +123,13 @@
 		3BF2D7711B826CAD00D4220A /* AppWatchLoginItemTests */ = {
 			isa = PBXGroup;
 			children = (
+				3BF66A121BA4425100A4A451 /* BlackHoleTimeWriter.swift */,
 				3BF455CD1B98D1C1007B792B /* TimeBoxTests.swift */,
 				3BF435031BA203A300B3F0A7 /* ApplicationObserverTest.swift */,
 				3BF66A0E1BA4373300A4A451 /* ApplicationObserverControllerTest.swift */,
 				3BF455D51B98D284007B792B /* File Time Warehouse Tests */,
 				3BF2D7741B826CAD00D4220A /* Info.plist */,
+				3BF66A141BA4432F00A4A451 /* TimeWriterTest.swift */,
 			);
 			path = AppWatchLoginItemTests;
 			sourceTree = "<group>";
@@ -287,9 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF455D31B98D26E007B792B /* FileTimeWarehouseTests.swift in Sources */,
+				3BF66A151BA4432F00A4A451 /* TimeWriterTest.swift in Sources */,
 				3BF435041BA203A300B3F0A7 /* ApplicationObserverTest.swift in Sources */,
 				3BF66A0F1BA4373300A4A451 /* ApplicationObserverControllerTest.swift in Sources */,
 				3BF455CE1B98D1C1007B792B /* TimeBoxTests.swift in Sources */,
+				3BF8D0A91BA4801A0074E92B /* BlackHoleTimeWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
