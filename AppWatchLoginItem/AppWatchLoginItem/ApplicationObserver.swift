@@ -72,8 +72,10 @@ class ApplicationObserver : NSObject {
     }
     
     private func observedApplicationDidTerminate() {
-        timeBox.endDate = NSDate()
-        timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate, applicationBundleIdentifier: applicationBundleIdentifier)
-        observedApplicationIsRunning = false
+        if (observedApplicationIsRunning) {
+            timeBox.endDate = NSDate()
+            timeWriter.writeTime(timeBox.startDate, endDate: timeBox.endDate, applicationBundleIdentifier: applicationBundleIdentifier)
+            observedApplicationIsRunning = false
+        }
     }
 }

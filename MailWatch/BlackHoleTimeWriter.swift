@@ -9,8 +9,12 @@
 import Foundation
 @testable import AppWatchLoginItem
 
-class BlackHoleTimeWriter: TimeWriter {
+class TimeWriterMock: TimeWriter {
+    
+    var didCallWriteTime = false
+    
     func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
-        // does nothing, black hole sucks in everything
+        // does nothing except noticing calls, black hole sucks in everything
+        didCallWriteTime = true
     }
 }

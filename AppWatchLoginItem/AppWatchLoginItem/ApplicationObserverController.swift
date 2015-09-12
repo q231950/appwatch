@@ -28,4 +28,5 @@ class ApplicationObserverController {
         let observer = ApplicationObserver(applicationBundleIdentifier: identifier, timeBox: TimeBox(), timeWriter:timeWriter)
         applicationObservers.append(observer)
     }
+   
 }

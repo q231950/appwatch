@@ -26,8 +26,8 @@ class ApplicationObserverControllerTest: XCTestCase {
     
     func testPersistsObservations() {
         let controllerUnderTest = ApplicationObserverController(identifiers: ["a", "b", "c"])
-        let mock1 = ApplicationObserverMock(applicationBundleIdentifier: "", timeBox: TimeBox(), timeWriter: BlackHoleTimeWriter())
-        let mock2 = ApplicationObserverMock(applicationBundleIdentifier: "", timeBox: TimeBox(), timeWriter: BlackHoleTimeWriter())
+        let mock1 = ApplicationObserverMock(applicationBundleIdentifier: "", timeBox: TimeBox(), timeWriter: TimeWriterMock())
+        let mock2 = ApplicationObserverMock(applicationBundleIdentifier: "", timeBox: TimeBox(), timeWriter: TimeWriterMock())
         
         controllerUnderTest.applicationObservers = [mock1, mock2]
         
