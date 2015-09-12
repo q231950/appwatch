@@ -15,15 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSSquareStatusItemLength)
     let applicationObserverController = ApplicationObserverController(identifiers: ["com.apple.TextEdit", "com.apple.mail"])
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        
-        let s:NSString = "version"
-        let url = applicationDocumentsDirectory.URLByAppendingPathComponent("hulu.txt")
-        do {
-            try s.writeToURL(url, atomically: true, encoding: NSUTF8StringEncoding)
-        } catch _ {
-        }
-        
+    func applicationDidFinishLaunching(aNotification: NSNotification) {        
         setupStatusBarIcon()
         setupStatusMenu()
     }
