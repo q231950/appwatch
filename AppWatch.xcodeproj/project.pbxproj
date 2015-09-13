@@ -102,7 +102,7 @@
 				3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */,
 				3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */,
 				3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */,
-				3BBA1D181B7F62BF0093637A /* MailWatch */,
+				3BBA1D181B7F62BF0093637A /* AppWatch */,
 				3BBA1D281B7F62BF0093637A /* MailWatchTests */,
 				3BBA1D171B7F62BF0093637A /* Products */,
 			);
@@ -117,7 +117,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3BBA1D181B7F62BF0093637A /* MailWatch */ = {
+		3BBA1D181B7F62BF0093637A /* AppWatch */ = {
 			isa = PBXGroup;
 			children = (
 				3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */,
@@ -130,6 +130,7 @@
 				3BBA1D201B7F62BF0093637A /* Info.plist */,
 				3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */,
 			);
+			name = AppWatch;
 			path = MailWatch;
 			sourceTree = "<group>";
 		};

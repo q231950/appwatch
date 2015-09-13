@@ -24,10 +24,6 @@ class ViewController: NSViewController {
         let enabled: Bool = NSUserDefaults.standardUserDefaults().boolForKey(autoLoginEnabledKey)
         segmentedControl.setSelected(enabled, forSegment: 0)
         segmentedControl.setSelected(!enabled, forSegment: 1)
-        
-//        let identifier: CFStringRef = "com.elbedev.MailWatch.AppWatchLoginItem"
-//        
-//        SMLoginItemSetEnabled(identifier, Bool(false))
     }
     
     @IBOutlet weak var segmentedControl: NSSegmentedControl! {
