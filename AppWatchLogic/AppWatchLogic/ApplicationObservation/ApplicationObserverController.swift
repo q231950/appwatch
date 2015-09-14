@@ -8,16 +8,16 @@
 
 import Foundation
 
-class ApplicationObserverController {
+public class ApplicationObserverController {
     internal var applicationObservers: [ApplicationObserver] = [ApplicationObserver]()
     
-    init(identifiers: [String]) {
+    public init(identifiers: [String]) {
         for identifier in identifiers {
             addApplicationObserver(identifier)
         }
     }
     
-    func persistObservations() {
+    public func persistObservations() {
         for applicationObserver in applicationObservers {
             applicationObserver.persistObservations()
         }

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AppWatchLoginItem
+@testable import AppWatchLogic
 
 class FileTimeWarehouseTests: XCTestCase {
     
@@ -16,7 +16,7 @@ class FileTimeWarehouseTests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        let filePath = NSBundle(identifier: "com.elbedev.AppWatchLoginItemTests")!.pathForResource("FileTimeWarehouseTestsSampleFile", ofType: "db")
+        let filePath = NSBundle(identifier: "com.elbedev.AppWatchLogicTests")!.pathForResource("FileTimeWarehouseTestsSampleFile", ofType: "db")
         timeWarehouse = FileTimeWarehouse(filePath: filePath!)
     }
     

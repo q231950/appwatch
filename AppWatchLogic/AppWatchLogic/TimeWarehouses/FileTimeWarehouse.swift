@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FileTimeWarehouse : TimeWarehouse {
+public class FileTimeWarehouse : TimeWarehouse {
     
     var file: String?
     

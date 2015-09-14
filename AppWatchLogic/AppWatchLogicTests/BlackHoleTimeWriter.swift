@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@testable import AppWatchLoginItem
+@testable import AppWatchLogic
 
 class TimeWriterMock: TimeWriter {
     

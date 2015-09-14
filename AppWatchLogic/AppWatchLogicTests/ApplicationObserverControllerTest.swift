@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AppWatchLoginItem
+@testable import AppWatchLogic
 
 class ApplicationObserverMock : ApplicationObserver {
     var didCallPersist = false

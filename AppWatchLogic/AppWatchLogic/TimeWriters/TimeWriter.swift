@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol TimeWriter {
+public protocol TimeWriter {
     func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String)
 }

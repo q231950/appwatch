@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3B3032A01B999D7E003CE479 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
-		3B6076E01BA4AF1300AC1E17 /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D191B7F62BF0093637A /* AppDelegate.swift */; };
 		3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */; };
 		3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */; };
@@ -17,6 +16,9 @@
 		3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D78B1B83A4A500D4220A /* SystemLog.swift */; };
 		3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */; };
 		3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7495C1B89DBA4008469E2 /* ViewController.swift */; };
+		3BF8E3901BA5C0B90070CAB0 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BF8E3C51BA5DC080070CAB0 /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF8E3C21BA5DBF60070CAB0 /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BF8E3EF1BA5E1830070CAB0 /* AppWatchLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,26 @@
 			remoteGlobalIDString = 3BBA1D151B7F62BF0093637A;
 			remoteInfo = MailWatch;
 		};
-		3BF2D7821B826CAE00D4220A /* PBXContainerItemProxy */ = {
+		3BF8E3C11BA5DBF60070CAB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */;
+			containerPortal = 3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3BF2D75C1B826CAD00D4220A;
 			remoteInfo = AppWatchLoginItem;
 		};
-		3BF2D7841B826CAE00D4220A /* PBXContainerItemProxy */ = {
+		3BF8E3C31BA5DBF60070CAB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */;
+			containerPortal = 3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 3BF2D76E1B826CAD00D4220A;
 			remoteInfo = AppWatchLoginItemTests;
+		};
+		3BF8E3C61BA5DC0C0070CAB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF2D75B1B826CAD00D4220A;
+			remoteInfo = AppWatchLoginItem;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,7 +59,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				3B6076E01BA4AF1300AC1E17 /* AppWatchLoginItem.app in Copy Login Item */,
+				3BF8E3C51BA5DC080070CAB0 /* AppWatchLoginItem.app in Copy Login Item */,
 			);
 			name = "Copy Login Item";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,10 +78,12 @@
 		3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MailWatch.entitlements; sourceTree = "<group>"; };
 		3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppWatch-Bridging-Header.h"; sourceTree = "<group>"; };
-		3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLoginItem.xcodeproj; path = AppWatchLoginItem/AppWatchLoginItem.xcodeproj; sourceTree = "<group>"; };
 		3BF2D78B1B83A4A500D4220A /* SystemLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemLog.swift; path = SystemLog/SystemLog.swift; sourceTree = "<group>"; };
 		3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		3BF7495C1B89DBA4008469E2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLoginItem.xcodeproj; path = AppWatchLoginItem/AppWatchLoginItem.xcodeproj; sourceTree = "<group>"; };
+		3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppWatchLogic.framework; path = "../../Library/Developer/Xcode/DerivedData/AppWatch-ajhuwfejdxqxgcbnywmfljxrvcuq/Build/Products/Debug/AppWatchLogic.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF8E3EF1BA5E1830070CAB0 /* AppWatchLogic.framework in Frameworks */,
 				3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */,
 				3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */,
 			);
@@ -99,12 +111,13 @@
 		3BBA1D0D1B7F62BF0093637A = {
 			isa = PBXGroup;
 			children = (
-				3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */,
-				3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */,
-				3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */,
+				3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */,
 				3BBA1D181B7F62BF0093637A /* AppWatch */,
 				3BBA1D281B7F62BF0093637A /* MailWatchTests */,
 				3BBA1D171B7F62BF0093637A /* Products */,
+				3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */,
+				3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */,
+				3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +136,7 @@
 				3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */,
 				3BBA1D191B7F62BF0093637A /* AppDelegate.swift */,
 				3BF7495C1B89DBA4008469E2 /* ViewController.swift */,
+				3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */,
 				3BF4FBFD1B8CF2D500E75118 /* View Controllers */,
 				3BF2D78A1B83A49200D4220A /* System Log */,
 				3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */,
@@ -142,15 +156,6 @@
 			path = MailWatchTests;
 			sourceTree = "<group>";
 		};
-		3BF2D77E1B826CAD00D4220A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */,
-				3BF2D7851B826CAE00D4220A /* AppWatchLoginItemTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3BF2D78A1B83A49200D4220A /* System Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +170,15 @@
 				3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3BF8E3BD1BA5DBF60070CAB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BF8E3C21BA5DBF60070CAB0 /* AppWatchLoginItem.app */,
+				3BF8E3C41BA5DBF60070CAB0 /* AppWatchLoginItemTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +196,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3BF8E3C71BA5DC0C0070CAB0 /* PBXTargetDependency */,
 			);
 			name = AppWatch;
 			productName = MailWatch;
@@ -244,8 +259,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3BF2D77E1B826CAD00D4220A /* Products */;
-					ProjectRef = 3BF2D77D1B826CAD00D4220A /* AppWatchLoginItem.xcodeproj */;
+					ProductGroup = 3BF8E3BD1BA5DBF60070CAB0 /* Products */;
+					ProjectRef = 3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -257,18 +272,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3BF2D7831B826CAE00D4220A /* AppWatchLoginItem.app */ = {
+		3BF8E3C21BA5DBF60070CAB0 /* AppWatchLoginItem.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = AppWatchLoginItem.app;
-			remoteRef = 3BF2D7821B826CAE00D4220A /* PBXContainerItemProxy */;
+			remoteRef = 3BF8E3C11BA5DBF60070CAB0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3BF2D7851B826CAE00D4220A /* AppWatchLoginItemTests.xctest */ = {
+		3BF8E3C41BA5DBF60070CAB0 /* AppWatchLoginItemTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AppWatchLoginItemTests.xctest;
-			remoteRef = 3BF2D7841B826CAE00D4220A /* PBXContainerItemProxy */;
+			remoteRef = 3BF8E3C31BA5DBF60070CAB0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -298,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */,
+				3BF8E3901BA5C0B90070CAB0 /* StatisticsViewController.swift in Sources */,
 				3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */,
 				3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */,
 				3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */,
@@ -318,6 +334,11 @@
 			isa = PBXTargetDependency;
 			target = 3BBA1D151B7F62BF0093637A /* AppWatch */;
 			targetProxy = 3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */;
+		};
+		3BF8E3C71BA5DC0C0070CAB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppWatchLoginItem;
+			targetProxy = 3BF8E3C61BA5DC0C0070CAB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +432,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppWatchLogic/build/Debug",
+				);
 				INFOPLIST_FILE = MailWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;
@@ -430,6 +455,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppWatchLogic/build/Debug",
+				);
 				INFOPLIST_FILE = MailWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;

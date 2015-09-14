@@ -448,9 +448,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <segmentedControl focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-Hn-FH3">
-                                <rect key="frame" x="426" y="19" width="75" height="23"/>
-                                <segmentedCell key="cell" borderStyle="border" focusRingType="none" alignment="left" style="capsule" trackingMode="selectOne" id="EJJ-Ic-cWB">
-                                    <font key="font" metaFont="system"/>
+                                <rect key="frame" x="428" y="19" width="74" height="20"/>
+                                <segmentedCell key="cell" borderStyle="border" focusRingType="none" alignment="left" style="roundRect" trackingMode="selectOne" id="EJJ-Ic-cWB">
+                                    <font key="font" metaFont="cellTitle"/>
                                     <segments>
                                         <segment label="on"/>
                                         <segment label="off" width="32" tag="1"/>
@@ -493,19 +493,53 @@
                 </viewController>
                 <customObject id="ZdM-WG-NPk" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1184.5" y="930"/>
+            <point key="canvasLocation" x="1901.5" y="692"/>
         </scene>
-        <!--View Controller-->
+        <!--Statistics View Controller-->
         <scene sceneID="nkF-no-PuH">
             <objects>
-                <viewController id="GcC-K2-AOM" sceneMemberID="viewController">
+                <viewController id="GcC-K2-AOM" customClass="StatisticsViewController" customModule="AppWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="65B-aI-saN">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="521" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rby-TS-A17">
+                                <rect key="frame" x="18" y="263" width="409" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="2FO-py-Bk6">
+                                    <font key="font" size="13" name=".HelveticaNeueDeskInterface-Bold"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ANj-hi-dCh">
+                                <rect key="frame" x="475" y="259" width="26" height="25"/>
+                                <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" focusRingType="none" inset="2" pullsDown="YES" id="H0o-bn-Sgd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="hLu-1U-HfF"/>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="selectionPopUpButtonDidSelect:" target="GcC-K2-AOM" id="mGp-yA-UzJ"/>
+                                </connections>
+                            </popUpButton>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Rby-TS-A17" secondAttribute="trailing" constant="96" id="7A0-lm-zqI"/>
+                            <constraint firstItem="Rby-TS-A17" firstAttribute="top" secondItem="65B-aI-saN" secondAttribute="top" constant="20" id="AwD-Z1-4MS"/>
+                            <constraint firstAttribute="trailing" secondItem="ANj-hi-dCh" secondAttribute="trailing" constant="20" id="daU-57-Yo2"/>
+                            <constraint firstItem="ANj-hi-dCh" firstAttribute="centerY" secondItem="Rby-TS-A17" secondAttribute="centerY" id="ng2-I3-ORw"/>
+                            <constraint firstItem="Rby-TS-A17" firstAttribute="leading" secondItem="65B-aI-saN" secondAttribute="leading" constant="20" id="t2q-2C-rwd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="appSelectionPopUpButton" destination="ANj-hi-dCh" id="9WF-9S-qgu"/>
+                        <outlet property="headerTitle" destination="Rby-TS-A17" id="kl0-bY-ivE"/>
+                        <outlet property="selectionPopUpButtonDidSelect" destination="ANj-hi-dCh" id="jUJ-aC-q9i"/>
+                    </connections>
                 </viewController>
                 <customObject id="xB2-oc-RiR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1901.5" y="423"/>
         </scene>
     </scenes>
 </document>

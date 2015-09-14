@@ -8,14 +8,14 @@
 
 import Cocoa
 
-class ApplicationObserver : NSObject {
+public class ApplicationObserver : NSObject {
     
     let applicationBundleIdentifier: String
     let timeBox: TimeBox
     let timeWriter: TimeWriter
     var observedApplicationIsRunning = false
     
-    init(applicationBundleIdentifier: String, timeBox: TimeBox, timeWriter: TimeWriter) {
+    public init(applicationBundleIdentifier: String, timeBox: TimeBox, timeWriter: TimeWriter) {
         self.applicationBundleIdentifier = applicationBundleIdentifier
         self.timeBox = timeBox
         self.timeWriter = timeWriter
@@ -27,7 +27,7 @@ class ApplicationObserver : NSObject {
     
     // MARK: Public
     
-    func persistObservations() {
+    public func persistObservations() {
         if observedApplicationIsRunning {
             observedApplicationDidTerminate()
         }

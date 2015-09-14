@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import AppWatchLogic
 
 extension NSDate {
     func endedWithinRange(from: NSDate, to: NSDate) -> Bool {
@@ -19,5 +20,5 @@ extension NSDate {
 }
 
 protocol TimeWarehouse {
-    func timeBoxes(from: NSDate, to: NSDate, completion: ([TimeBox]?, NSError?) -> Void)
+    func timeBoxes(from: NSDate, to: NSDate, completion: ([AppWatchLogic.TimeBox]?, NSError?) -> Void)
 }

@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import AppWatchLogic
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

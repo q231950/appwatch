@@ -8,11 +8,11 @@
 
 import Foundation
 
-class TimeBox {
-    var startDate = NSDate()
-    var endDate = NSDate()
+public class TimeBox {
+    public var startDate = NSDate()
+    public var endDate = NSDate()
     
-    init() {
+    public init() {
         
     }
     

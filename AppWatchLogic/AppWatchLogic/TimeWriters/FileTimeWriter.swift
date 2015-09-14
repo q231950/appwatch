@@ -8,15 +8,15 @@
 
 import Foundation
 
-class FileTimeWriter : TimeWriter {
+public class FileTimeWriter : TimeWriter {
     
     internal let fileName: String
     
-    init(fileName: String) {
+    public init(fileName: String) {
         self.fileName = fileName
     }
     
-    func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
+    public func writeTime(startDate: NSDate, endDate: NSDate, applicationBundleIdentifier: String) {
 
         let fileManager = NSFileManager.defaultManager()
         
