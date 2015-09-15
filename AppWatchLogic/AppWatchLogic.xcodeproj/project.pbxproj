@@ -19,7 +19,6 @@
 		3BF4E75A1BA75D0500932E9A /* FileTimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4E7571BA75D0500932E9A /* FileTimeWriter.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF4E75B1BA75D0500932E9A /* RemoteTimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4E7581BA75D0500932E9A /* RemoteTimeWriter.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF4E75C1BA75D0500932E9A /* TimeWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4E7591BA75D0500932E9A /* TimeWriter.swift */; settings = {ASSET_TAGS = (); }; };
-		3BF8E3A61BA5CE420070CAB0 /* AppWatchLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BF8E3A51BA5CE420070CAB0 /* AppWatchLogic.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BF8E3AD1BA5CE420070CAB0 /* AppWatchLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8E3A21BA5CE420070CAB0 /* AppWatchLogic.framework */; settings = {ASSET_TAGS = (); }; };
 		3BF8E3DC1BA5E09C0070CAB0 /* FileTimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF8E3CC1BA5DC860070CAB0 /* FileTimeWarehouse.swift */; };
 		3BF8E3DE1BA5E0CF0070CAB0 /* RemoteTimeWarehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF8E3DD1BA5E0CF0070CAB0 /* RemoteTimeWarehouse.swift */; };
@@ -51,7 +50,6 @@
 		3BF4E7581BA75D0500932E9A /* RemoteTimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteTimeWriter.swift; path = TimeWriters/RemoteTimeWriter.swift; sourceTree = "<group>"; };
 		3BF4E7591BA75D0500932E9A /* TimeWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeWriter.swift; path = TimeWriters/TimeWriter.swift; sourceTree = "<group>"; };
 		3BF8E3A21BA5CE420070CAB0 /* AppWatchLogic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppWatchLogic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BF8E3A51BA5CE420070CAB0 /* AppWatchLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppWatchLogic.h; sourceTree = "<group>"; };
 		3BF8E3A71BA5CE420070CAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BF8E3AC1BA5CE420070CAB0 /* AppWatchLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF8E3B31BA5CE420070CAB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				3BF4E7541BA75A0800932E9A /* Application Observer */,
 				3BF8E3FC1BA5E3CB0070CAB0 /* Time Writers */,
 				3BF8E3E11BA5E0E30070CAB0 /* Time Warehouses */,
-				3BF8E3A51BA5CE420070CAB0 /* AppWatchLogic.h */,
 				3BF8E3A71BA5CE420070CAB0 /* Info.plist */,
 			);
 			path = AppWatchLogic;
@@ -163,7 +160,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF8E3A61BA5CE420070CAB0 /* AppWatchLogic.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +336,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -379,6 +376,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -399,7 +397,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchLogic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
 			};
 			name = Debug;
 		};
@@ -418,7 +415,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchLogic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
 			};
 			name = Release;
 		};
