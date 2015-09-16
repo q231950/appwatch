@@ -12,7 +12,7 @@ public class FileTimeWarehouse : TimeWarehouse {
     
     var file: String?
     
-    init(filePath: String) {
+    public init(filePath: String) {
         do {
             file = try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)
         } catch _ {
@@ -20,7 +20,7 @@ public class FileTimeWarehouse : TimeWarehouse {
         }
     }
     
-    func timeBoxes(from: NSDate, to: NSDate, completion: ([TimeBox]?, NSError?) -> Void) {
+    public func timeBoxes(from: NSDate, to: NSDate, completion: ([TimeBox]?, NSError?) -> Void) {
         if let file = self.file as String! {
             let lines = file.componentsSeparatedByString("\n")
             var timeBoxes = [TimeBox]()

@@ -21,8 +21,16 @@ class StatisticsViewController: NSViewController {
         headerTitle.stringValue = "Usage"
         addSelectableApps()
         
-//        let h = FileTimeWriter(fileName: "somefile.db")
-//        let hous = AppWatchLogic.FileTimeWriter()
+        let documentsPath = NSHomeDirectory()
+        let fileName = ".appwatch.db"
+        let filePath = documentsPath.stringByAppendingString("/" + fileName)
+        
+        let fileTimeWarehouse = FileTimeWarehouse(filePath: filePath)
+        fileTimeWarehouse.timeBoxes(NSDate(timeIntervalSinceNow: -36000), to: NSDate()) { (timeBoxes: [TimeBox]?, error: NSError?) -> Void in
+            for timeBox in timeBoxes! {
+                print("box \(timeBox.startDate), \(timeBox.endDate)")
+            }
+        }
     }
     
     private func addSelectableApps() {

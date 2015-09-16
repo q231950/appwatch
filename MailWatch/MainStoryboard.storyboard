@@ -71,7 +71,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="AppWatch" systemMenu="apple" id="hYq-dy-8W5">
                                     <items>
-                                        <menuItem title="About asd" id="pWk-KA-ry7">
+                                        <menuItem title="About AppWatch" id="pWk-KA-ry7">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="YkP-2x-vlS"/>
@@ -515,7 +515,7 @@
                                 <rect key="frame" x="475" y="259" width="26" height="25"/>
                                 <popUpButtonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="border" focusRingType="none" inset="2" pullsDown="YES" id="H0o-bn-Sgd">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="hLu-1U-HfF"/>
                                 </popUpButtonCell>
                                 <connections>
@@ -532,9 +532,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="appSelectionPopUpButton" destination="ANj-hi-dCh" id="9WF-9S-qgu"/>
+                        <outlet property="appSelectionPopUpButton" destination="ANj-hi-dCh" id="7EF-Uc-uTX"/>
                         <outlet property="headerTitle" destination="Rby-TS-A17" id="kl0-bY-ivE"/>
-                        <outlet property="selectionPopUpButtonDidSelect" destination="ANj-hi-dCh" id="jUJ-aC-q9i"/>
                     </connections>
                 </viewController>
                 <customObject id="xB2-oc-RiR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

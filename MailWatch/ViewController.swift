@@ -12,14 +12,6 @@ class ViewController: NSViewController {
     
     let autoLoginEnabledKey = "autoLoginEnabled"
     
-    override init?(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
-    
     override func viewDidLoad() {
         let enabled: Bool = NSUserDefaults.standardUserDefaults().boolForKey(autoLoginEnabledKey)
         segmentedControl.setSelected(enabled, forSegment: 0)
