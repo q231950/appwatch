@@ -13,7 +13,7 @@ class StatisticsViewController: NSViewController {
     
     @IBOutlet weak var headerTitle: NSTextField!
     @IBOutlet weak var appSelectionPopUpButton: NSPopUpButton!
-    private let selectableItems = ["TextEdit", "Mail"]
+    private let selectableItems = ["TextEdit", "App"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

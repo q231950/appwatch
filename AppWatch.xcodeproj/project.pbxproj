@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B3032A01B999D7E003CE479 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
-		3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBA1D191B7F62BF0093637A /* AppDelegate.swift */; };
-		3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */; };
+		3B1B6D5E1BAB47D300A7B1DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B6D5D1BAB47D300A7B1DF /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		3B5A0C291BAB400500E463CC /* AppWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A0C281BAB400500E463CC /* AppWatchUITests.swift */; };
+		3B5A0C381BAB405300E463CC /* AppWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A0C371BAB405300E463CC /* AppWatchTests.swift */; };
+		3BBFC1A61BAB465000E832E2 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFC1A31BAB465000E832E2 /* StatisticsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1A71BAB465000E832E2 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFC1A41BAB465000E832E2 /* TimeTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1A81BAB465000E832E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFC1A51BAB465000E832E2 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1AA1BAB465B00E832E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFC1A91BAB465B00E832E2 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1AC1BAB466400E832E2 /* SystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBFC1AB1BAB466400E832E2 /* SystemLog.swift */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1B01BAB467900E832E2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFC1AE1BAB467900E832E2 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		3BBFC1B11BAB467900E832E2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BBFC1AF1BAB467900E832E2 /* MainStoryboard.storyboard */; settings = {ASSET_TAGS = (); }; };
 		3BC938D21BA89525006EB664 /* AppWatchLogic.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */; };
-		3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */; };
 		3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */; };
-		3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D78B1B83A4A500D4220A /* SystemLog.swift */; };
-		3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */; };
-		3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7495C1B89DBA4008469E2 /* ViewController.swift */; };
-		3BF8E3901BA5C0B90070CAB0 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		3BF8E3C51BA5DC080070CAB0 /* AppWatchLoginItem.app in Copy Login Item */ = {isa = PBXBuildFile; fileRef = 3BF8E3C21BA5DBF60070CAB0 /* AppWatchLoginItem.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */ = {
+		3B5A0C2B1BAB400500E463CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BBA1D0E1B7F62BF0093637A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3BBA1D151B7F62BF0093637A;
-			remoteInfo = MailWatch;
+			remoteInfo = AppWatch;
+		};
+		3B5A0C3A1BAB405300E463CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BBA1D0E1B7F62BF0093637A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BBA1D151B7F62BF0093637A;
+			remoteInfo = AppWatch;
 		};
 		3BF4795A1BA890A10030A377 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -78,55 +86,84 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B1B6D5D1BAB47D300A7B1DF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AppWatch/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		3B1B6D5F1BAB494E00A7B1DF /* AppWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppWatch-Bridging-Header.h"; path = "AppWatch/AppWatch-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3B5A0C121BAB3DD400E463CC /* MainUserInterfaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainUserInterfaceTest.swift; path = AppWatchTests/MainUserInterfaceTest.swift; sourceTree = SOURCE_ROOT; };
+		3B5A0C261BAB400500E463CC /* AppWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5A0C281BAB400500E463CC /* AppWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWatchUITests.swift; sourceTree = "<group>"; };
+		3B5A0C2A1BAB400500E463CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B5A0C351BAB405300E463CC /* AppWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B5A0C371BAB405300E463CC /* AppWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWatchTests.swift; sourceTree = "<group>"; };
+		3B5A0C391BAB405300E463CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBA1D161B7F62BF0093637A /* AppWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BBA1D191B7F62BF0093637A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3BBA1D201B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BBA1D251B7F62BF0093637A /* AppWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BBA1D2B1B7F62BF0093637A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MailWatch.entitlements; sourceTree = "<group>"; };
+		3BBFC1A31BAB465000E832E2 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StatisticsViewController.swift; path = AppWatch/ViewControllers/StatisticsViewController.swift; sourceTree = SOURCE_ROOT; };
+		3BBFC1A41BAB465000E832E2 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeTableViewController.swift; path = AppWatch/ViewControllers/TimeTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		3BBFC1A51BAB465000E832E2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AppWatch/ViewControllers/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		3BBFC1A91BAB465B00E832E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AppWatch/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		3BBFC1AB1BAB466400E832E2 /* SystemLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemLog.swift; path = AppWatch/SystemLog/SystemLog.swift; sourceTree = SOURCE_ROOT; };
+		3BBFC1AD1BAB467900E832E2 /* AppWatch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AppWatch-Bridging-Header.h"; path = "AppWatch/AppWatch-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3BBFC1AE1BAB467900E832E2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppWatch/Info.plist; sourceTree = SOURCE_ROOT; };
+		3BBFC1AF1BAB467900E832E2 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = AppWatch/MainStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
+		3BF1FCE11B7FE9800034543C /* AppWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppWatch.entitlements; path = AppWatch/AppWatch.entitlements; sourceTree = "<group>"; };
 		3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
-		3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppWatch-Bridging-Header.h"; sourceTree = "<group>"; };
-		3BF2D78B1B83A4A500D4220A /* SystemLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SystemLog.swift; path = SystemLog/SystemLog.swift; sourceTree = "<group>"; };
-		3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
-		3BF7495C1B89DBA4008469E2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLoginItem.xcodeproj; path = AppWatchLoginItem/AppWatchLoginItem.xcodeproj; sourceTree = "<group>"; };
 		3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppWatchLogic.framework; path = "../../Library/Developer/Xcode/DerivedData/AppWatch-ajhuwfejdxqxgcbnywmfljxrvcuq/Build/Products/Debug/AppWatchLogic.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3B5A0C231BAB400500E463CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5A0C321BAB405300E463CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BBA1D131B7F62BF0093637A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF1FCE01B7FE8F90034543C /* CloudKit.framework in Frameworks */,
 				3BF2D74E1B82638C00D4220A /* ServiceManagement.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BBA1D221B7F62BF0093637A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3B3032A01B999D7E003CE479 /* ServiceManagement.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B5A0C271BAB400500E463CC /* AppWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A0C281BAB400500E463CC /* AppWatchUITests.swift */,
+				3B5A0C2A1BAB400500E463CC /* Info.plist */,
+			);
+			path = AppWatchUITests;
+			sourceTree = "<group>";
+		};
+		3B5A0C361BAB405300E463CC /* AppWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B5A0C371BAB405300E463CC /* AppWatchTests.swift */,
+				3B5A0C121BAB3DD400E463CC /* MainUserInterfaceTest.swift */,
+				3B5A0C391BAB405300E463CC /* Info.plist */,
+			);
+			path = AppWatchTests;
+			sourceTree = "<group>";
+		};
 		3BBA1D0D1B7F62BF0093637A = {
 			isa = PBXGroup;
 			children = (
 				3BF8E3BC1BA5DBF60070CAB0 /* AppWatchLoginItem.xcodeproj */,
 				3BBA1D181B7F62BF0093637A /* AppWatch */,
-				3BBA1D281B7F62BF0093637A /* MailWatchTests */,
+				3B5A0C271BAB400500E463CC /* AppWatchUITests */,
+				3B5A0C361BAB405300E463CC /* AppWatchTests */,
 				3BBA1D171B7F62BF0093637A /* Products */,
 				3BF8E3EE1BA5E1830070CAB0 /* AppWatchLogic.framework */,
-				3BF1FCDF1B7FE8F90034543C /* CloudKit.framework */,
 				3BF2D74D1B82638C00D4220A /* ServiceManagement.framework */,
 			);
 			sourceTree = "<group>";
@@ -135,7 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				3BBA1D161B7F62BF0093637A /* AppWatch.app */,
-				3BBA1D251B7F62BF0093637A /* AppWatchTests.xctest */,
+				3B5A0C261BAB400500E463CC /* AppWatchUITests.xctest */,
+				3B5A0C351BAB405300E463CC /* AppWatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,33 +181,20 @@
 		3BBA1D181B7F62BF0093637A /* AppWatch */ = {
 			isa = PBXGroup;
 			children = (
-				3BF1FCE11B7FE9800034543C /* MailWatch.entitlements */,
-				3BBA1D191B7F62BF0093637A /* AppDelegate.swift */,
-				3BF7495C1B89DBA4008469E2 /* ViewController.swift */,
-				3BF8E38F1BA5C0B90070CAB0 /* StatisticsViewController.swift */,
+				3BF1FCE11B7FE9800034543C /* AppWatch.entitlements */,
+				3B1B6D5D1BAB47D300A7B1DF /* AppDelegate.swift */,
+				3B1B6D5F1BAB494E00A7B1DF /* AppWatch-Bridging-Header.h */,
 				3BF4FBFD1B8CF2D500E75118 /* View Controllers */,
 				3BF2D78A1B83A49200D4220A /* System Log */,
-				3BBA1D1B1B7F62BF0093637A /* Assets.xcassets */,
-				3BF1F5D21B88704E00920BEF /* MainStoryboard.storyboard */,
-				3BBA1D201B7F62BF0093637A /* Info.plist */,
-				3BF2D74F1B8264CB00D4220A /* AppWatch-Bridging-Header.h */,
 			);
 			name = AppWatch;
 			path = MailWatch;
 			sourceTree = "<group>";
 		};
-		3BBA1D281B7F62BF0093637A /* MailWatchTests */ = {
-			isa = PBXGroup;
-			children = (
-				3BBA1D2B1B7F62BF0093637A /* Info.plist */,
-			);
-			path = MailWatchTests;
-			sourceTree = "<group>";
-		};
 		3BF2D78A1B83A49200D4220A /* System Log */ = {
 			isa = PBXGroup;
 			children = (
-				3BF2D78B1B83A4A500D4220A /* SystemLog.swift */,
+				3BBFC1AB1BAB466400E832E2 /* SystemLog.swift */,
 			);
 			name = "System Log";
 			sourceTree = "<group>";
@@ -177,7 +202,13 @@
 		3BF4FBFD1B8CF2D500E75118 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3BF4FC001B8CF2FA00E75118 /* TimeTableViewController.swift */,
+				3BBFC1A31BAB465000E832E2 /* StatisticsViewController.swift */,
+				3BBFC1A41BAB465000E832E2 /* TimeTableViewController.swift */,
+				3BBFC1A51BAB465000E832E2 /* ViewController.swift */,
+				3BBFC1A91BAB465B00E832E2 /* Assets.xcassets */,
+				3BBFC1AD1BAB467900E832E2 /* AppWatch-Bridging-Header.h */,
+				3BBFC1AE1BAB467900E832E2 /* Info.plist */,
+				3BBFC1AF1BAB467900E832E2 /* MainStoryboard.storyboard */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +225,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3B5A0C251BAB400500E463CC /* AppWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5A0C2D1BAB400500E463CC /* Build configuration list for PBXNativeTarget "AppWatchUITests" */;
+			buildPhases = (
+				3B5A0C221BAB400500E463CC /* Sources */,
+				3B5A0C231BAB400500E463CC /* Frameworks */,
+				3B5A0C241BAB400500E463CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5A0C2C1BAB400500E463CC /* PBXTargetDependency */,
+			);
+			name = AppWatchUITests;
+			productName = AppWatchUITests;
+			productReference = 3B5A0C261BAB400500E463CC /* AppWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3B5A0C341BAB405300E463CC /* AppWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B5A0C3C1BAB405300E463CC /* Build configuration list for PBXNativeTarget "AppWatchTests" */;
+			buildPhases = (
+				3B5A0C311BAB405300E463CC /* Sources */,
+				3B5A0C321BAB405300E463CC /* Frameworks */,
+				3B5A0C331BAB405300E463CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B5A0C3B1BAB405300E463CC /* PBXTargetDependency */,
+			);
+			name = AppWatchTests;
+			productName = AppWatchTests;
+			productReference = 3B5A0C351BAB405300E463CC /* AppWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3BBA1D151B7F62BF0093637A /* AppWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BBA1D2E1B7F62BF0093637A /* Build configuration list for PBXNativeTarget "AppWatch" */;
@@ -214,24 +281,6 @@
 			productReference = 3BBA1D161B7F62BF0093637A /* AppWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3BBA1D241B7F62BF0093637A /* AppWatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3BBA1D311B7F62BF0093637A /* Build configuration list for PBXNativeTarget "AppWatchTests" */;
-			buildPhases = (
-				3BBA1D211B7F62BF0093637A /* Sources */,
-				3BBA1D221B7F62BF0093637A /* Frameworks */,
-				3BBA1D231B7F62BF0093637A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3BBA1D271B7F62BF0093637A /* PBXTargetDependency */,
-			);
-			name = AppWatchTests;
-			productName = MailWatchTests;
-			productReference = 3BBA1D251B7F62BF0093637A /* AppWatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -242,18 +291,28 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Martin Kim Dung-Pham";
 				TargetAttributes = {
+					3B5A0C251BAB400500E463CC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BBA1D151B7F62BF0093637A;
+					};
+					3B5A0C341BAB405300E463CC = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 3BBA1D151B7F62BF0093637A;
+					};
 					3BBA1D151B7F62BF0093637A = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = X29V4JPQ55;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
 						};
-					};
-					3BBA1D241B7F62BF0093637A = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = 3BBA1D151B7F62BF0093637A;
 					};
 				};
 			};
@@ -277,7 +336,8 @@
 			projectRoot = "";
 			targets = (
 				3BBA1D151B7F62BF0093637A /* AppWatch */,
-				3BBA1D241B7F62BF0093637A /* AppWatchTests */,
+				3B5A0C341BAB405300E463CC /* AppWatchTests */,
+				3B5A0C251BAB400500E463CC /* AppWatchUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,51 +360,73 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3B5A0C241BAB400500E463CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5A0C331BAB405300E463CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BBA1D141B7F62BF0093637A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF1F5D31B88704E00920BEF /* MainStoryboard.storyboard in Resources */,
-				3BBA1D1C1B7F62BF0093637A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BBA1D231B7F62BF0093637A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3BBFC1B11BAB467900E832E2 /* MainStoryboard.storyboard in Resources */,
+				3BBFC1B01BAB467900E832E2 /* Info.plist in Resources */,
+				3BBFC1AA1BAB465B00E832E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3B5A0C221BAB400500E463CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5A0C291BAB400500E463CC /* AppWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B5A0C311BAB405300E463CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5A0C381BAB405300E463CC /* AppWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3BBA1D121B7F62BF0093637A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBA1D1A1B7F62BF0093637A /* AppDelegate.swift in Sources */,
-				3BF8E3901BA5C0B90070CAB0 /* StatisticsViewController.swift in Sources */,
-				3BF4FC011B8CF2FA00E75118 /* TimeTableViewController.swift in Sources */,
-				3BF7495D1B89DBA4008469E2 /* ViewController.swift in Sources */,
-				3BF2D78C1B83A4A500D4220A /* SystemLog.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3BBA1D211B7F62BF0093637A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3BBFC1A71BAB465000E832E2 /* TimeTableViewController.swift in Sources */,
+				3BBFC1AC1BAB466400E832E2 /* SystemLog.swift in Sources */,
+				3BBFC1A61BAB465000E832E2 /* StatisticsViewController.swift in Sources */,
+				3B1B6D5E1BAB47D300A7B1DF /* AppDelegate.swift in Sources */,
+				3BBFC1A81BAB465000E832E2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3BBA1D271B7F62BF0093637A /* PBXTargetDependency */ = {
+		3B5A0C2C1BAB400500E463CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3BBA1D151B7F62BF0093637A /* AppWatch */;
-			targetProxy = 3BBA1D261B7F62BF0093637A /* PBXContainerItemProxy */;
+			targetProxy = 3B5A0C2B1BAB400500E463CC /* PBXContainerItemProxy */;
+		};
+		3B5A0C3B1BAB405300E463CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BBA1D151B7F62BF0093637A /* AppWatch */;
+			targetProxy = 3B5A0C3A1BAB405300E463CC /* PBXContainerItemProxy */;
 		};
 		3BF4795B1BA890A10030A377 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -354,6 +436,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3B5A0C2E1BAB400500E463CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AppWatch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		3B5A0C2F1BAB400500E463CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AppWatch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		3B5A0C3D1BAB405300E463CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppWatch.app/Contents/MacOS/AppWatch";
+			};
+			name = Debug;
+		};
+		3B5A0C3E1BAB405300E463CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AppWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppWatch.app/Contents/MacOS/AppWatch";
+			};
+			name = Release;
+		};
 		3BBA1D2C1B7F62BF0093637A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,7 +573,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MailWatch/MailWatch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AppWatch/AppWatch.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -447,12 +581,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppWatchLogic/build/Debug",
 				);
-				INFOPLIST_FILE = MailWatch/Info.plist;
+				INFOPLIST_FILE = AppWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;
 				PRODUCT_NAME = AppWatch;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/AppWatch-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppWatch/AppWatch-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -462,7 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MailWatch/MailWatch.entitlements;
+				CODE_SIGN_ENTITLEMENTS = AppWatch/AppWatch.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -470,44 +604,36 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppWatchLogic/build/Debug",
 				);
-				INFOPLIST_FILE = MailWatch/Info.plist;
+				INFOPLIST_FILE = AppWatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch;
 				PRODUCT_NAME = AppWatch;
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MailWatch/AppWatch-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		3BBA1D321B7F62BF0093637A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MailWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatchTests;
-				PRODUCT_NAME = AppWatchTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailWatch.app/Contents/MacOS/MailWatch";
-			};
-			name = Debug;
-		};
-		3BBA1D331B7F62BF0093637A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MailWatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.MailWatchTests;
-				PRODUCT_NAME = AppWatchTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailWatch.app/Contents/MacOS/MailWatch";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppWatch/AppWatch-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3B5A0C2D1BAB400500E463CC /* Build configuration list for PBXNativeTarget "AppWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5A0C2E1BAB400500E463CC /* Debug */,
+				3B5A0C2F1BAB400500E463CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B5A0C3C1BAB405300E463CC /* Build configuration list for PBXNativeTarget "AppWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5A0C3D1BAB405300E463CC /* Debug */,
+				3B5A0C3E1BAB405300E463CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3BBA1D111B7F62BF0093637A /* Build configuration list for PBXProject "AppWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -522,15 +648,6 @@
 			buildConfigurations = (
 				3BBA1D2F1B7F62BF0093637A /* Debug */,
 				3BBA1D301B7F62BF0093637A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BBA1D311B7F62BF0093637A /* Build configuration list for PBXNativeTarget "AppWatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3BBA1D321B7F62BF0093637A /* Debug */,
-				3BBA1D331B7F62BF0093637A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

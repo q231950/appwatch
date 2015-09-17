@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3BC938CF1BA89510006EB664 /* AppWatchLogic.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC938C91BA89450006EB664 /* AppWatchLogic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B1B6D611BAB4C2400A7B1DF /* AppWatchLoginItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B6D601BAB4C2400A7B1DF /* AppWatchLoginItemTests.swift */; settings = {ASSET_TAGS = (); }; };
+		3B5A0C451BAB450500E463CC /* AppWatchLogic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC938C91BA89450006EB664 /* AppWatchLogic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BF2D7601B826CAD00D4220A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D75F1B826CAD00D4220A /* AppDelegate.swift */; };
 		3BF2D7631B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2D7611B826CAD00D4220A /* AppWatchLoginItem.xcdatamodeld */; };
 		3BF2D7651B826CAD00D4220A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7641B826CAD00D4220A /* Assets.xcassets */; };
 		3BF2D7681B826CAD00D4220A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2D7661B826CAD00D4220A /* MainMenu.xib */; };
-		3BF479591BA88F980030A377 /* AppWatchLogic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BF8E3F41BA5E3850070CAB0 /* AppWatchLogic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3B5A0C421BAB44C800E463CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BC938C31BA89450006EB664 /* AppWatchLogic.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF8E3A11BA5CE420070CAB0;
+			remoteInfo = AppWatchLogic;
+		};
+		3B5A0C471BAB452900E463CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BF2D7541B826CAD00D4220A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BF2D75B1B826CAD00D4220A;
+			remoteInfo = AppWatchLoginItem;
+		};
 		3BC938C81BA89450006EB664 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3BC938C31BA89450006EB664 /* AppWatchLogic.xcodeproj */;
@@ -30,37 +44,24 @@
 			remoteGlobalIDString = 3BF8E3AC1BA5CE420070CAB0;
 			remoteInfo = AppWatchLogicTests;
 		};
-		3BC938CC1BA8945C006EB664 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BC938C31BA89450006EB664 /* AppWatchLogic.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BF8E3A11BA5CE420070CAB0;
-			remoteInfo = AppWatchLogic;
-		};
-		3BF2D76F1B826CAD00D4220A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3BF2D7541B826CAD00D4220A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3BF2D75B1B826CAD00D4220A;
-			remoteInfo = AppWatchLoginItem;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3BC938CE1BA894FF006EB664 /* Copy Frameworks */ = {
+		3B5A0C441BAB44C800E463CC /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3BC938CF1BA89510006EB664 /* AppWatchLogic.framework in Copy Frameworks */,
+				3B5A0C451BAB450500E463CC /* AppWatchLogic.framework in Embed Frameworks */,
 			);
-			name = "Copy Frameworks";
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B1B6D601BAB4C2400A7B1DF /* AppWatchLoginItemTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppWatchLoginItemTests.swift; sourceTree = "<group>"; };
 		3B30329E1B999D32003CE479 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3BC938C31BA89450006EB664 /* AppWatchLogic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppWatchLogic.xcodeproj; path = ../AppWatchLogic/AppWatchLogic.xcodeproj; sourceTree = "<group>"; };
 		3BF2D75C1B826CAD00D4220A /* AppWatchLoginItem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWatchLoginItem.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +80,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BF479591BA88F980030A377 /* AppWatchLogic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF2D7741B826CAD00D4220A /* Info.plist */,
+				3B1B6D601BAB4C2400A7B1DF /* AppWatchLoginItemTests.swift */,
 			);
 			path = AppWatchLoginItemTests;
 			sourceTree = "<group>";
@@ -164,12 +165,12 @@
 				3BF2D7591B826CAD00D4220A /* Frameworks */,
 				3BF2D75A1B826CAD00D4220A /* Resources */,
 				3BF8E3911BA5CA260070CAB0 /* Headers */,
-				3BC938CE1BA894FF006EB664 /* Copy Frameworks */,
+				3B5A0C441BAB44C800E463CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3BC938CD1BA8945C006EB664 /* PBXTargetDependency */,
+				3B5A0C431BAB44C800E463CC /* PBXTargetDependency */,
 			);
 			name = AppWatchLoginItem;
 			productName = AppWatchLoginItem;
@@ -187,7 +188,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3BF2D7701B826CAD00D4220A /* PBXTargetDependency */,
+				3B5A0C481BAB452900E463CC /* PBXTargetDependency */,
 			);
 			name = AppWatchLoginItemTests;
 			productName = AppWatchLoginItemTests;
@@ -200,6 +201,7 @@
 		3BF2D7541B826CAD00D4220A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Martin Kim Dung-Pham";
 				TargetAttributes = {
@@ -287,21 +289,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1B6D611BAB4C2400A7B1DF /* AppWatchLoginItemTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3BC938CD1BA8945C006EB664 /* PBXTargetDependency */ = {
+		3B5A0C431BAB44C800E463CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AppWatchLogic;
-			targetProxy = 3BC938CC1BA8945C006EB664 /* PBXContainerItemProxy */;
+			targetProxy = 3B5A0C421BAB44C800E463CC /* PBXContainerItemProxy */;
 		};
-		3BF2D7701B826CAD00D4220A /* PBXTargetDependency */ = {
+		3B5A0C481BAB452900E463CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3BF2D75B1B826CAD00D4220A /* AppWatchLoginItem */;
-			targetProxy = 3BF2D76F1B826CAD00D4220A /* PBXContainerItemProxy */;
+			targetProxy = 3B5A0C471BAB452900E463CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,7 +337,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -378,7 +381,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -404,6 +407,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer: Martin Kim Dung-Pham (T66335VK2X)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AppWatchLoginItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch.AppWatchLoginItem;
@@ -419,6 +423,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer: Martin Kim Dung-Pham (T66335VK2X)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AppWatchLoginItem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatch.AppWatchLoginItem;
@@ -431,11 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AppWatchLoginItemTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elbedev.AppWatchLoginItemTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppWatchLoginItem.app/Contents/MacOS/AppWatchLoginItem";
 			};
 			name = Debug;
@@ -444,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AppWatchLoginItemTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
