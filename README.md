@@ -1,2 +1,2 @@
-# appwatch
+# AppWatch
 App usage monitor
